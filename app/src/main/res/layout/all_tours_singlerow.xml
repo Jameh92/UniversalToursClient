@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="end">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tour Name"
+            android:id="@+id/tour_name"
+            android:textColor="#282424"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/tour_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#282424"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tour Date"
+            android:id="@+id/tour_date"
+            android:textColor="#282424"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Organiser"
+            android:id="@+id/organiser"
+            android:textColor="#282424"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Cost/PP"
+            android:id="@+id/cost_pp"
+            android:textColor="#282424"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Max Persons"
+            android:id="@+id/max_pp"
+            android:textColor="#282424"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Description"
+            android:id="@+id/desc"
+            android:textColor="#282424"
+            android:paddingLeft="10dp" />
+
+        <com.google.android.gms.maps.MapView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/mapAdapter"
+            map:cameraZoom="13"
+            map:mapType="normal"
+            map:liteMode="true"
+            tools:ignore="MissingPrefix" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbSubmitTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Submit a New Tour"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tour Name: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txtName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tDT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Tour Date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick a Date"
+                    android:id="@+id/dateButton"
+                    android:padding="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick a Time"
+                    android:id="@+id/timeButton"
+                    android:padding="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tour Date &amp; Time"
+                        android:id="@+id/txtDate" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Organiser:"
+                        android:id="@+id/tOrg"
+                        android:paddingTop="15dp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/tCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cost: "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:paddingTop="20dp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/tMaxPP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max Occupancy:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:paddingTop="20dp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Longitude: "
+                        android:id="@+id/tLong"
+                        android:paddingTop="20dp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Latitude: "
+                        android:id="@+id/tLat"
+                        android:paddingTop="20dp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/txtTime" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtOrg" />
+
+                    <EditText
+                        android:id="@+id/txtCost"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtMax" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtLong" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtLat" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:id="@+id/tDesc"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDesc"
+                android:nestedScrollingEnabled="true" />
+
+            <Button
+                android:id="@+id/btnSubmitTour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Submit" />
+
+        </LinearLayout>
+    </ScrollView>

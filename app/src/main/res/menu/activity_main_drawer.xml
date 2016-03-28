@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Tour Map" />
+        <item
+            android:id="@+id/nav_all_tours"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="View all Tours" />
+        <item
+            android:id="@+id/nav_submitATour"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Submit a Tour" />
+    </group>
+
+    <item android:title="Options">
+        <menu>
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Account Settings" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
